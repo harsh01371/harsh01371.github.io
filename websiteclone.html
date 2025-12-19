@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial; }
+.navbar { display: flex; justify-content: space-between; background: #0f1111; color: white; padding: 1rem; align-items: center; }
+.nav-left { display: flex; gap: 1rem; align-items: center; }
+.nav-center { display: flex; flex: 1; max-width: 600px; }
+.nav-center input { flex: 1; padding: 0.5rem; }
+.hero { height: 400px; background: #e0e0e0; display: flex; align-items: center; justify-content: center; font-size: 2rem; }
+.products { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; padding: 2rem; }
+.product-card { background: white; padding: 1rem; text-align: center; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+.product-card img { width: 100%; height: 200px; object-fit: cover; }
+footer { background: #232f3d; color: white; padding: 2rem; text-align: center; }
+@media (max-width: 768px) { .navbar { flex-direction: column; gap: 1rem; } }
+        </style>
+    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone - 1st Semester Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240326183545/amazon.png" alt="Amazon Logo" class="nav-logo">
+                <div class="location">
+                    <i class="fas fa-location-dot"></i>
+                    <span>India</span>
+                </div>
+            </div>
+            <div class="nav-center">
+                <select><option>All</option></select>
+                <input type="text" placeholder="Search Amazon">
+                <button><i class="fas fa-magnifying-glass"></i></button>
+            </div>
+            <div class="nav-right">
+                <div>Hello, sign in</div>
+                <div>Cart <i class="fas fa-shopping-cart"></i></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">Hero Banner Image Here</section>
+        <section class="products">
+            <div class="product-card">Gaming Gear <img src="https://via.placeholder.com/300x200?text=Gaming" alt="Gaming"></div>
+            <div class="product-card">Laptops <img src="https://via.placeholder.com/300x200?text=Laptop" alt="Laptop"></div>
+            <div class="product-card">Smartphones <img src="https://via.placeholder.com/300x200?text=Phone" alt="Phone"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a href="#">Back to top</a>
+            <ul>
+                <li>Get to Know Us</li>
+                <li>Careers</li>
+                <li>About Amazon</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
