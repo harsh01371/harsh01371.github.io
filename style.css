@@ -9,6 +9,7 @@ header {
     padding: 10px;
     display: flex;
     align-items: center;
+    position: sticky;
 }
 header h3{
     color: white;
@@ -27,11 +28,20 @@ nav a {
     margin: 0 15px;
     text-decoration: none;
 }
-
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #f3f3f3;
+}
 .banner {
+    width: auto;
+    height: auto;
+}
+.banner img{
     width: 100%;
-    height: 300px;
-    object-fit: cover;
+    height: auto;
+    object-fit: fill;
 }
 
 .products {
@@ -90,6 +100,10 @@ button {
 .cart-item img {
     width: 80px;
     margin-right: 15px;
+}
+.cart-btn{
+    border-radius: 20px;
+    align: center;
 }
 
 .about {
@@ -181,4 +195,27 @@ footer {
     .about {
         width: 90%;
     }
+}@media (max-width: 768px) {
+ .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #232f3e;
+        flex-direction: column;
+        width: 200px;
+        padding: 15px;
+    }
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+  .products {
+        grid-template-columns: 1fr;
+    }
+
 }
+

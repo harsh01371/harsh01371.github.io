@@ -1,23 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Amazon Clone</title>
+
+    <!-- REQUIRED FOR MOBILE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <img src="images/logo.png" class="logo">
-    <h3>Amazon</h3>
-    <nav>
+<header class="header">
+    <div class="header-left">
+        <img src="images/logo.png" class="logo">
+        <h3>Amazon</h3>
+    </div>
+
+    <nav class="nav-links" id="navLinks">
         <a href="index.html">Home</a>
         <a href="cart.html">Cart</a>
         <a href="login.html">Login</a>
         <a href="about.html">About</a>
     </nav>
+
+    <!-- HAMBURGER -->
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
 </header>
 
-<img src="images/banner.jpg" class="banner">
+<section class="banner">
+    <img src="images/banner.webp">
+</section>
 
 <section class="products">
     <div class="product">
@@ -38,33 +51,36 @@
         <img src="images/product3.jpeg">
         <h3>Product 3</h3>
         <p>$200</p>
-        <button> Add to Cart </button>
+        <button>Add to Cart</button>
+    </div>
+</section>
+<section class="products">
+    <div class="product">
+        <img src="images/product1.jpeg">
+        <h3>Product 4</h3>
+        <p>$100</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="images/product2.jpeg">
+        <h3>Product 5</h3>
+        <p>$150</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="images/product3.jpeg">
+        <h3>Product 6</h3>
+        <p>$200</p>
+        <button>Add to Cart</button>
     </div>
 </section>
 
 <footer>
-    <p>© 2025 Amazon Clone<br>
-    Get to Know Us
-About Amazon
-Careers
-Press Releases
-Amazon Science
-Connect with Us
-Facebook
-Twitter
-Instagram
-Make Money with Us
-Sell on Amazon
-Sell under Amazon Accelerator
-Protect and Build Your Brand
-Amazon Global Selling
-Supply to Amazon
-Become an Affiliate
-Fulfilment by Amazon
-Advertise Your Products
-Amazon Pay on Merchants
-</p>
+    <p>© 2025 Amazon Clone</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
